@@ -1,0 +1,22 @@
+run:
+  timeout: "1m"
+  concurrency: 4
+  issue-exit-code: 1
+  tests: true
+  skip-dirs-use-default: true
+  allow-parallel-runners: true
+  go: "1.19"
+
+output:
+  format: "html"
+  print-issued-lines: true
+  print-linter-name: true
+  unique-by-line: true
+
+linters:
+  enable-all: true
+  fast: true
+  disable:
+    - scopelint
+    - ifshort
+    - nosnakecase

@@ -1,0 +1,9 @@
+vendor/
+bin/
+tmp/
+testdata/
+
+*.log
+config/.env
+lintresult.json
+lint-report.html
