@@ -69,12 +69,12 @@ func CreateServer() *Server {
 }
 
 func (s *Server) Start(addr string) error {
-	workDir, _ := os.Getwd()
+	rootPath, _ := os.Getwd()
 	ln, _ := net.Listen("tcp4", addr)
 
 	cert, err := tls.LoadX509KeyPair(
-		path.Join(workDir, "config", "certs", "certificate.crt"),
-		path.Join(workDir, "config", "certs", "cert-key.key"),
+		path.Join(rootPath, "config", "certs", "certificate.crt"),
+		path.Join(rootPath, "config", "certs", "cert-key.key"),
 	)
 
 	if err != nil {

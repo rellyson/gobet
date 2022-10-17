@@ -18,6 +18,7 @@ require (
 	github.com/josharian/intern v1.0.0 // indirect
 	github.com/klauspost/compress v1.15.11 // indirect
 	github.com/mailru/easyjson v0.7.7 // indirect
+	github.com/rabbitmq/amqp091-go v1.5.0 // indirect
 	github.com/swaggo/files v0.0.0-20220728132757-551d4a08d97a // indirect
 	github.com/swaggo/swag v1.8.6 // indirect
 	github.com/valyala/bytebufferpool v1.0.0 // indirect

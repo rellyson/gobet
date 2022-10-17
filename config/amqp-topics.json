@@ -1,0 +1,8 @@
+[
+    {
+        "name": "bet_created",
+        "type": "topic",
+        "routingKey": "bet_created_event",
+        "queueName": "created_bets"
+    }
+]
